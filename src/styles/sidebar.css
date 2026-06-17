@@ -1,0 +1,129 @@
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 350px;
+  height: 100%;
+  background: #fff;
+  padding: 40px;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+  z-index: 1000;
+  color: #000;
+}
+
+.dark-theme .sidebar {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar__content {
+  margin-top: 20px;
+}
+
+.filter-group {
+  margin-bottom: 30px;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  opacity: 0.7;
+}
+
+.dark-theme .filter-group label {
+  color: #ccc;
+  opacity: 1;
+}
+
+.sidebar select,
+.sidebar input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  background: transparent;
+  color: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.dark-theme .sidebar select,
+.dark-theme .sidebar input {
+  border-color: #555;
+  color: #fff;
+  background-color: #2a2a2a;
+}
+
+.dark-theme .sidebar select option {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.range-inputs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.range-divider {
+  color: #aaa;
+}
+
+.sidebar__footer {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn-show {
+  background: #9c2b2b;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dark-theme .btn-show {
+  background: #d4a853;
+  color: #000;
+}
+
+.btn-clear {
+  background: transparent;
+  border: 1px solid #ddd;
+  color: inherit;
+  padding: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dark-theme .btn-clear {
+  border-color: #555;
+  color: #ccc;
+}
+
+.btn-close {
+  background: none;
+  border: none;
+  font-size: 35px;
+  cursor: pointer;
+  color: inherit;
+}

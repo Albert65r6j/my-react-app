@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  transition: 0.3s;
+  margin: 0;
+  padding: 0;
+}
+
+.dark-theme {
+  background-color: #121212;
+  color: white;
+  min-height: 100vh;
+}
+
+.dark-theme .search-container {
+  border-color: #444;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 5%;
+}
